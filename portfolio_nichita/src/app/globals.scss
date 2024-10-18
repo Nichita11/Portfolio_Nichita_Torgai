@@ -1,8 +1,4 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
+@import "./globalVars.scss";
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -16,12 +12,17 @@ body {
   overflow-x: hidden;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
+html {
+  color: $oxford-blue;
+  background: $white;
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin dark {
+  color: $white;
+  background: $oxford-blue;
 }
 
 * {
