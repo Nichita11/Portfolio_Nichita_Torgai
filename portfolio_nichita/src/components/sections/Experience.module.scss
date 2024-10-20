@@ -1,0 +1,126 @@
+@import "../../app/globalVars.scss";
+
+.scale {
+  animation: scaleicon 1.5s cubic-bezier(0, 1, 0, 1);
+  @keyframes scaleicon {
+    0% {
+      transform: scale(0.5);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+
+.slide {
+  animation: slidecard 1.5s cubic-bezier(0, 1, 0, 1);
+  @keyframes slidecard {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+}
+
+.experienceCard {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 64px;
+  height: fit-content;
+  justify-content: center;
+  max-width: 1000px;
+  margin: auto;
+
+  &__timeline {
+    position: relative;
+    width: 4px;
+    background: black;
+    height: 100%;
+
+    &__icon {
+      position: absolute;
+      top: -12px;
+      left: -22px;
+      //   transform: translateX(-50%);
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      border: 4px solid $verdigris;
+      color: $verdigris;
+      background: $yinmn-blue;
+    }
+  }
+
+  &__card {
+    color: white;
+    position: relative;
+    background: $yinmn-blue;
+    border-radius: 8px;
+    padding: 24px;
+
+    &__framework {
+      display: inline;
+      font-size: 1.25rem;
+      border-radius: 999px;
+      background: $verdigris;
+      padding: 4px 8px;
+    }
+
+    &__title {
+      margin: 24px 0 2px 0;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    &__subtitle {
+      font-weight: 500;
+      font-size: 1.25rem;
+      margin-bottom: 24px;
+    }
+
+    &__techContainer {
+      display: flex;
+      gap: 10px;
+
+      &__text {
+        padding: 4px 10px;
+        border-radius: 999px;
+        background: $verdigris;
+      }
+    }
+
+    &__date {
+      margin-top: 12px;
+    }
+
+    &__triangle {
+      transform: rotate(-90deg);
+      left: -26px;
+      top: 4px;
+      color: $yinmn-blue;
+      position: absolute;
+    }
+  }
+}
+
+.experience {
+  padding-bottom: 48px;
+
+  &__dark {
+    background: #b2beb5;
+  }
+
+  &__flex {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+  }
+}

@@ -1,2 +1,49 @@
+@import "../../app/globalVars.scss";
+
 .hero {
+  height: 100vh;
+  background: #e48b0e;
+
+  &__line {
+    height: 8px;
+    width: 450px;
+    background: $verdigris;
+    right: -0px;
+    top: 150px;
+    transform: rotate(45deg);
+    position: absolute;
+    transform-origin: right center;
+
+    @media (min-width:900px) {
+      top: 200px;
+    }
+  }
+
+  &_dark {
+    background: $rich-black !important;
+    color: $baby-powder;
+  }
+
+  &_webdevContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 200px);
+    flex-direction: column;
+
+    @media (max-width: 900px) {
+      height: calc(100% - 150px);
+    }
+
+    & > h1 {
+      font-weight: 700;
+      font-size: 2rem;
+      padding: 0 20px;
+      text-align: center;
+
+      @media (min-width: 900px) {
+        font-size: 3rem;
+      }
+    }
+  }
 }

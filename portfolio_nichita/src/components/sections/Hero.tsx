@@ -1,19 +1,30 @@
+"use client";
 import Image from "next/image";
 import styles from "./Hero.module.scss";
 
 import "./Hero.scss";
+import TextAnimation from "../TextAnimation";
+import classNames from "classnames";
+import { useTheme } from "../contextWrappers/ThemeContextWrapper";
+import ThemeSwitcher from "../inputs/ThemeSwitcher";
 
 export default function Hero() {
+  const theme = useTheme();
   return (
-    <section className={styles.hero}>
+    <section
+      className={classNames(styles.hero, {
+        [styles.hero_dark]: theme === "dark",
+      })}
+    >
       <a
-        href="https://your-url"
+        href="https://github.com/Nichita11?tab=repositories"
         className="github-corner github-corner-left"
         aria-label="View source on GitHub"
       >
+        <div className={styles.hero__line}></div>
         <svg
-          width="90"
-          height="90"
+          width="200"
+          height="200"
           viewBox="0 0 250 250"
           style={{
             fill: "#151513",
@@ -39,6 +50,26 @@ export default function Hero() {
           />
         </svg>
       </a>
+      <div className={styles.hero_webdevContainer}>
+        <Image
+          src={"/pc_webdev.svg"}
+          width={250}
+          height={250}
+          alt="pc_webdev.svg"
+        />
+        <h1>Nichita Torgai</h1>
+        <TextAnimation
+          text={[
+            "Developeur web junior",
+            "Developeur sur React junior",
+            "Front-end developeur junior",
+          ]}
+          delay={100}
+          infinite
+          endDelay={2000}
+        />
+        <ThemeSwitcher />
+      </div>
     </section>
   );
 }

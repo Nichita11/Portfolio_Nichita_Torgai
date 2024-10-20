@@ -1,0 +1,36 @@
+.textAnimation {
+  font-size: 1.5rem;
+  padding: 0 20px;
+  text-align: center;
+  font-weight: 300;
+
+  @media (min-width: 900px) {
+    font-size: 2rem;
+  }
+
+  & > div:nth-child(1)::after {
+    font-weight: 200;
+    font-size: 1.75rem;
+    content: "|";
+    animation-name: fadeInOut;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(2);
+
+    @media (min-width: 900px) {
+      font-size: 2.5rem;
+    }
+
+    @keyframes fadeInOut {
+      0% {
+        opacity: 0;
+      }
+      //   50% {
+      //     opacity: 1;
+      //   }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import "../../app/globalVars.scss";
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: $verdigris;
+  background: $space-cadet;
+  column-gap: 48px;
+  row-gap: 12px;
+  padding: 24px 20px 24px 20px;
+  flex-wrap: wrap;
+
+  &__links {
+    display: flex;
+    gap: 12px;
+
+    &__link {
+      border-radius: 999px;
+      padding: 4px;
+      border: 2px solid $yinmn-blue;
+      height: 48px;
+      width: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 240ms ease-in-out;
+
+      &:hover {
+        background: $yinmn-blue;
+      }
+
+      &:active{
+        transform: scale(0.90);
+      }
+    }
+  }
+
+  & > div {
+    height: max-content;
+  }
+}

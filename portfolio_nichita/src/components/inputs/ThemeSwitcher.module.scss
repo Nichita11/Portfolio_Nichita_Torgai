@@ -1,0 +1,51 @@
+@import "../../app/globalVars.scss";
+
+.input {
+  display: flex;
+  position: relative;
+  width: 90px;
+  height: 40px;
+  border-radius: 999px;
+  background: $rich-black;
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4px 0 4px;
+  margin-top: 12px;
+
+  & > svg:nth-child(1) {
+    position: absolute;
+    color: $baby-powder !important;
+    top: 2px;
+    left: 4px;
+    transition: color 480ms ease-in-out;
+    transition: opacity 480ms ease-in-out;
+    transition: left 480ms ease-in-out;
+    opacity: 1;
+  }
+
+  & > svg:nth-child(2) {
+    position: absolute;
+    color: $rich-black !important;
+    top: 2px;
+    left: 4px;
+    transition: color 480ms ease-in-out;
+    transition: opacity 480ms ease-in-out;
+    transition: left 480ms ease-in-out;
+    opacity: 0;
+  }
+
+  &_dark {
+    background: $baby-powder;
+
+    & > svg:nth-child(1) {
+      left: 50px;
+      opacity: 0;
+    }
+
+    & > svg:nth-child(2) {
+      left: 50px;
+      opacity: 1;
+    }
+  }
+}
