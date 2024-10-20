@@ -17,7 +17,7 @@ export default function About() {
       })}
     >
       <ContainerSection>
-        <SectionHeader>About me</SectionHeader>
+        <SectionHeader>A propos</SectionHeader>
         <div className={styles.about__content}>
           <div className={styles.about__content__imgCard}>
             <Image
@@ -59,7 +59,15 @@ export default function About() {
             </div>
             <div className={styles.about__content__cmd__text}>
               <br />
-              <p>C:\Users\nichitatorgai&gt;</p>
+              <p>
+                C:\Users\nichitatorgai&gt;  Hello ! 🙂 Je m’appelle Nichita je
+                suis un passionné de développement web et je me suis approfondis
+                dans le spectre front-end. Je me spécialise sur le Htlm, CSS,
+                JS, (surtout le React). Je suis très curieux et enflammé par
+                l’apprentissage des nouvelles choses et des nouveaux et
+                libraires. Je vous présente mes compétences et tout ce que j’ai
+                appris, dans ce portfolio! 😉
+              </p>
             </div>
           </div>
         </div>

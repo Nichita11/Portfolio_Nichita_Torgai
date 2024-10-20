@@ -1,0 +1,36 @@
+@import "../../app/globalVars.scss";
+
+.projects {
+  background: #8a9a5b;
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 36px;
+    column-gap: 48px;
+    margin-bottom: 48px;
+
+    &__card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background: $verdigris;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      transition: all 240ms ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+      }
+
+      & > div {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}

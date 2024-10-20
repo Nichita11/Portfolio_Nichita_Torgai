@@ -34,6 +34,7 @@
   height: fit-content;
   justify-content: center;
   max-width: 1000px;
+  padding-left: 20px;
   margin: auto;
 
   &__timeline {
@@ -89,6 +90,7 @@
     &__techContainer {
       display: flex;
       gap: 10px;
+      flex-wrap: wrap;
 
       &__text {
         padding: 4px 10px;

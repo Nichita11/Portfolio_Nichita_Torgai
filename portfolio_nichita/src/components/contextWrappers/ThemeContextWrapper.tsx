@@ -14,14 +14,20 @@ export default function ThemeContextWrapper({
 }: {
   children: React.ReactNode;
 }) {
-  if (window.matchMedia && !localStorage.getItem("colorScheme")) {
+  if (
+    typeof window !== "undefined" &&
+    window.matchMedia &&
+    !localStorage.getItem("colorScheme")
+  ) {
     const query = window.matchMedia("prefers-color-scheme: dark").matches;
     localStorage.setItem("colorScheme", query ? "dark" : "white");
   }
 
   const [theme, setTheme] = useReducer(
     themeReducer,
-    localStorage.getItem("colorScheme") as "white" | "dark"
+    typeof localStorage !== "undefined"
+      ? (localStorage.getItem("colorScheme") as "white" | "dark")
+      : "white"
   );
   return (
     <ThemeContext.Provider value={theme}>

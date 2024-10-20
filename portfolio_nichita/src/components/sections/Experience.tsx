@@ -89,10 +89,22 @@ export default function Experience() {
         <ExperienceCard
           Icon={IconBrandReact}
           framework="React.js"
-          workPosition="Intern"
-          company="IBM"
-          techArr={["Rest API", "Swagger.io", "React", "Wordpress", "Etc..."]}
-          datePeriod="10.2019 - present"
+          workPosition="Student"
+          company="Openclasrooms"
+          techArr={[
+            "Rest API",
+            "Swagger.io",
+            "React",
+            "Wordpress",
+            "Express.js",
+            "JavaScript",
+            "Node.js",
+            "HTML",
+            "CSS",
+            "Sass",
+            "TypeScript",
+          ]}
+          datePeriod="10.2023 - present"
         />
         <ExperienceCard Icon={IconHourglassHigh} />
       </ContainerSection>
