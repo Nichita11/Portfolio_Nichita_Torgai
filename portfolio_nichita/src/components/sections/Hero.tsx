@@ -61,8 +61,8 @@ export default function Hero() {
         <TextAnimation
           text={[
             "Developeur web junior",
-            "Developeur sur React junior",
-            "Front-end developeur junior",
+            "React junior developeur",
+            "Front-end junior developeur",
           ]}
           delay={100}
           infinite

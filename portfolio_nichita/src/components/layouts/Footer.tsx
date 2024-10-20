@@ -23,7 +23,9 @@ export default function Footer() {
           <IconBrandInstagram size={36} />
         </Link>
         <Link
-          href={"https://github.com/Nichita11"}
+          href={
+            "https://www.linkedin.com/in/nichitatorgai?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+          }
           className={styles.footer__links__link}
         >
           <IconBrandLinkedin size={36} />

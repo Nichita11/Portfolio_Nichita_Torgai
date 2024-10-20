@@ -89,7 +89,7 @@ export default function Experience() {
           Icon={IconBrandReact}
           framework="React.js"
           workPosition="Student"
-          company="Openclasrooms"
+          company="Openclassrooms"
           techArr={[
             "Rest API",
             "Swagger.io",
