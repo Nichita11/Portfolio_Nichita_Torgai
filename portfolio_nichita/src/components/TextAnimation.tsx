@@ -1,4 +1,4 @@
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./TextAnimation.module.scss";
 
 export default function TextAnimation({
@@ -19,7 +19,7 @@ export default function TextAnimation({
 
   useEffect(() => {
     if (reachedEnd) {
-      const timeout = setTimeout(() => {
+      setTimeout(() => {
         setCurrentText((prevText) => prevText.slice(0, prevText.length - 1));
         setCurrentIndex((prevIndex) => {
           if (prevIndex === 1) {

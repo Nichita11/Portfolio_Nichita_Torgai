@@ -16,7 +16,9 @@ export default function ThemeSwitcher() {
         [styles.input_dark]: theme === "dark",
       })}
       onClick={() => {
-        themeDispatch !== null && themeDispatch();
+        if (themeDispatch) {
+          themeDispatch();
+        }
       }}
     >
       <IconSun size={36} stroke={2} />

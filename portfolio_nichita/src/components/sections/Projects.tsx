@@ -2,7 +2,6 @@ import Link from "next/link";
 import Container, { ContainerSection } from "../layouts/Container";
 import SectionHeader from "../layouts/SectionHeader";
 import styles from "./Projects.module.scss";
-import Image from "next/image";
 import { IconBrandGithub } from "@tabler/icons-react";
 
 const project: { href: string; title: string }[] = [

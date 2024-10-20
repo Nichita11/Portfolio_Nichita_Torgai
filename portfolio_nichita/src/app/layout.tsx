@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.scss";
-import Navbar from "@/components/layouts/Navbar";
-import { createContext, useReducer, useState } from "react";
 import ThemeContextWrapper from "@/components/contextWrappers/ThemeContextWrapper";
 import { Inter } from "next/font/google";
 import Footer from "@/components/layouts/Footer";

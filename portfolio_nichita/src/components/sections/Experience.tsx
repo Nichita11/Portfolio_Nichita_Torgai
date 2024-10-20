@@ -1,7 +1,6 @@
 "use client";
 import {
   IconBrandReact,
-  IconHourglass,
   IconHourglassHigh,
   IconTriangleFilled,
   TablerIcon,
@@ -28,7 +27,7 @@ const ExperienceCard = ({
   techArr?: string[];
   datePeriod?: string;
 }) => {
-  const { ref, inView, entry } = useInView({ threshold: 0 });
+  const { ref, inView } = useInView({ threshold: 0 });
   return (
     <div className={styles.experienceCard} ref={ref}>
       <div className={styles.experienceCard__timeline}>
