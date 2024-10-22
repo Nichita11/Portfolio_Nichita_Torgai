@@ -41,6 +41,7 @@ const ExperienceCard = ({
       </div>
       {techArr && (
         <div
+          // className={styles.experienceCard__card + " " + inView && styles.slide}
           className={classNames(styles.experienceCard__card, {
             [styles.slide]: inView,
           })}

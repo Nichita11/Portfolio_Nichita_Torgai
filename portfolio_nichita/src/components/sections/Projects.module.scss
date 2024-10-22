@@ -4,7 +4,8 @@
   background: #8a9a5b;
 
   &__content {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 350px);
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -15,21 +16,100 @@
     &__card {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
       flex-direction: column;
       background: $verdigris;
       border-radius: 12px;
-      padding: 20px;
+      padding: 0 0 20px 0;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
       transition: all 240ms ease-in-out;
+      height: 100%;
+      gap: 48px;
+      border: 4px solid $fulvous;
+      overflow: hidden;
 
       &:hover {
         transform: scale(1.1);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
       }
 
+      & > img {
+        object-fit: contain;
+        width: 350px;
+        height: auto;
+        border-radius: 8px;
+        // max-height: 280px;
+      }
+
+      &:nth-child(3) > img {
+        object-fit: cover;
+        height: 280px;
+      }
+
       & > div {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
+      }
+    }
+
+    &__modal {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      gap: 24px;
+
+      & > img {
+        width: 80vw;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+
+        @media (min-width: 900px) {
+          width: 50vw;
+        }
+        height: auto;
+      }
+
+      & > div:nth-child(2) {
+        color: black;
+        padding: 0 20px 0 20px;
+      }
+
+      & > div:nth-child(3) {
+        color: black;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        padding: 0 20px 20px 20px;
+
+        & > div {
+          color: white;
+          background: $yinmn-blue;
+          border-radius: 999px;
+          padding: 4px 8px 4px 8px;
+        }
+      }
+
+      &__github {
+        border-radius: 999px;
+        padding: 4px;
+        border: 2px solid $yinmn-blue;
+        height: 48px;
+        width: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 240ms ease-in-out;
+        color: $yinmn-blue;
+        margin: 0 20px 0 20px;
+
+        &:hover {
+          background: $light-sea-green;
+        }
+
+        &:active {
+          transform: scale(0.9);
+        }
       }
     }
   }
