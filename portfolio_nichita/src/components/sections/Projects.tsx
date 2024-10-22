@@ -36,7 +36,7 @@ L’objectif de ce projet était de mettre en place le fron-end du site avec Rea
     href: "https://github.com/Nichita11/projet_6",
     title: "Sophie Bluel",
     src: "/huiesosca.jpg",
-    description: `Le site de Sophie nous montre son portfolio avec tous les projets qu' elle à fait, groupées par catégories différentes. Pour réaliser ce projet j' ai fait la page de Log-in fonctionnelle et j'ai  ajouté une modale pour pouvoir modifier son portfolio en ajoutant des nouveaux projets.`,
+    description: `Le site de Sophie nous montre son portfolio avec tous les projets qu' elle a fait, groupées par catégories différentes. Pour réaliser ce projet j' ai fait la page de Log-in fonctionnelle et j'ai  ajouté une modale pour pouvoir modifier son portfolio en ajoutant des nouveaux projets.`,
     icon: ["JavaScript", "HTML", "CSS", "JQuery"],
   },
 ];
@@ -83,7 +83,7 @@ export default function Projects() {
               />
               <div>{project[contentIndex].description}</div>
               <div>
-                Technologies aprises:
+                Technologies utilisées:
                 {project[contentIndex].icon.map((el, key) => (
                   <div key={key}>{el}</div>
                 ))}
