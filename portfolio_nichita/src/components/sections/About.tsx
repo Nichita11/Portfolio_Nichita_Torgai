@@ -60,13 +60,14 @@ export default function About() {
             <div className={styles.about__content__cmd__text}>
               <br />
               <p>
-                C:\Users\nichitatorgai&gt; Hello ! 🙂 Je m’appelle Nichita je
-                suis un passionné de développement web et j'ai approfondis mes
-                connaisances dans le spectre front-end. Je me spécialise sur le
-                Htlm, CSS, JS, (surtout en React). Je suis très curieux et
-                enthousiaste par l’idée d'apprendre des nouvelles technologies
-                et des nouvelles libraires. Je vous présente mes compétences et
-                tout ce que j’ai appris, dans ce portfolio! 😉
+                C:\Users\nichitatorgai&gt; Hello ! 🙂 Je m&apos;appelle Nichita
+                je suis un passionné de développement web et j&apos;ai
+                approfondis mes connaisances dans le spectre front-end. Je me
+                spécialise sur le Htlm, CSS, JS, (surtout en React). Je suis
+                très curieux et enthousiaste par l&apos;idée d&apos;apprendre
+                des nouvelles technologies et des nouvelles libraires. Je vous
+                présente mes compétences et tout ce que j&apos;ai appris, dans
+                ce portfolio! 😉
               </p>
             </div>
           </div>

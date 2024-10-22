@@ -3,14 +3,7 @@ import Link from "next/link";
 import Container, { ContainerSection } from "../layouts/Container";
 import SectionHeader from "../layouts/SectionHeader";
 import styles from "./Projects.module.scss";
-import {
-  IconBrandGithub,
-  IconBrandGithubFilled,
-  IconBrandMongodb,
-  IconBrandRedux,
-  IconBrandTypescript,
-  TablerIcon,
-} from "@tabler/icons-react";
+import { IconBrandGithubFilled } from "@tabler/icons-react";
 import { useRef, useState } from "react";
 import Modal from "../layouts/Modal";
 import Image from "next/image";
@@ -92,7 +85,7 @@ export default function Projects() {
               <div>
                 Technologies aprises:
                 {project[contentIndex].icon.map((el, key) => (
-                  <div>{el}</div>
+                  <div key={key}>{el}</div>
                 ))}
                 <Link
                   href={project[contentIndex].href}

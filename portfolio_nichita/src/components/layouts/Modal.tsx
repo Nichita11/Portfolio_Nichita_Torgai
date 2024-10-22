@@ -1,14 +1,15 @@
-import { useEffect, useRef, useState } from "react";
+import { MutableRefObject, useEffect, useRef } from "react";
 import styles from "./Modal.module.scss";
 
 export default function Modal({
   handlerRef,
   children,
 }: {
-  handlerRef: any;
+  handlerRef: MutableRefObject<{
+    toggleActive: () => void;
+  }|null>;
   children: React.ReactNode;
 }) {
-  //   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDialogElement>(null);
 
   const toggleActive = () => {
@@ -29,10 +30,10 @@ export default function Modal({
 
   return (
     <dialog
-    className={styles.modal}
+      className={styles.modal}
       ref={ref}
       onClick={(event) => {
-        if ((event.target === event.currentTarget)) {
+        if (event.target === event.currentTarget) {
           event.currentTarget.close();
         }
       }}
