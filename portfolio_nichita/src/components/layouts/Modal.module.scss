@@ -6,7 +6,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    overflow: hidden;
+    // overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
     border-radius: 12px;
     background: white;
     min-width: 300px;
