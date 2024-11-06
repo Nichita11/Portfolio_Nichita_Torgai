@@ -60,11 +60,11 @@ export default function Hero() {
         <h1>Nichita Torgai</h1>
         <TextAnimation
           text={[
-            "Developeur web junior",
-            "React junior developeur",
-            "Front-end junior developeur",
+            "Developer web junior",
+            "React junior developer",
+            "Front-end junior developer",
           ]}
-          delay={100}
+          delay={100} 
           infinite
           endDelay={2000}
         />

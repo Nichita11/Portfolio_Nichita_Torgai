@@ -63,7 +63,7 @@ export default function About() {
                 C:\Users\nichitatorgai&gt; Hello ! 🙂 Je m&apos;appelle Nichita
                 je suis un passionné de développement web et j&apos;ai
                 approfondis mes connaisances dans le spectre front-end. Je me
-                spécialise sur le Htlm, CSS, JS, (surtout en React). Je suis
+                spécialise sur le Html, CSS, JS, (surtout en React). Je suis
                 très curieux et enthousiaste par l&apos;idée d&apos;apprendre
                 des nouvelles technologies et des nouvelles libraires. Je vous
                 présente mes compétences et tout ce que j&apos;ai appris, dans
