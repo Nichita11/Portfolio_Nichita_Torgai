@@ -1,11 +1,11 @@
 "use client";
 import { IconTerminal2 } from "@tabler/icons-react";
+import classNames from "classnames";
+import Image from "next/image";
+import { useTheme } from "../contextWrappers/ThemeContextWrapper";
 import Container, { ContainerSection } from "../layouts/Container";
 import SectionHeader from "../layouts/SectionHeader";
 import styles from "./About.module.scss";
-import Image from "next/image";
-import classNames from "classnames";
-import { useTheme } from "../contextWrappers/ThemeContextWrapper";
 
 export default function About() {
   const theme = useTheme();
@@ -21,7 +21,7 @@ export default function About() {
         <div className={styles.about__content}>
           <div className={styles.about__content__imgCard}>
             <Image
-              src={"/ebalaMea.png"}
+              src={"/Nikita.jpg"}
               width={200}
               height={250}
               alt="profilePic"
